@@ -1,16 +1,10 @@
-.App {
+/* .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -26,13 +20,80 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Layout*/
+.carousel{
+  background-image: url("../src/assets/dr_tech.jpg");
+  background-size: 100% 100%;
+  background-position: 'center';
+  background-repeat: 'no-repeat';
+  width:100vw;
+  height:50.5vw;
+}
+.carousel-black-blur{
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.75)
+
+}
+.carousel-navbar{
+  background: transparent;
+  position: relative;
+  width:100%;
+  height:60%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.medbots-logo{
+  margin:0;
+  background: transparent;
+}
+.navbar{
+  width:80%;
+  background: transparent;
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+.navbar nav ol{
+  margin: 0;
+  padding-right: 30px;
+  list-style: None;
+  font-size: 22px;
+  display: inline;
+}
+.navbar nav ol li{
+  display: inline;
+  padding: 10px 15px;
+}
+.navbar nav ol a{
+  text-decoration: None;
+  color: White;
+}
+.account{
+  /* change className later when putting signup/login buttons */
+  background: transparent;
+  justify-content: right;
+}
+.account a{
+  position: relative;
+  top: 30px;
+  text-decoration: None;
+  margin-right: 30px;
+}
+.account a:hover{
+  text-decoration: underline;
+}
+.accountOptions{
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+}
+.carousel-contents{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.carousel-contents h1{
+  color: white;
+  font-size: 70px;
 }
