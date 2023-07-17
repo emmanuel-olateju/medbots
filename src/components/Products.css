@@ -7,10 +7,12 @@
     background: transparent;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 150px;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 .product{
     border: 1px solid white;
-    color:grey;
+    color:white;
     text-align: center;
+    width: 70%;
 }
