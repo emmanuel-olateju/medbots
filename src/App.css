@@ -24,6 +24,8 @@
 
 /*Layout*/
 .carousel{
+  /* display: grid;
+  grid-template-columns: 1fr; */
   background-image: url("../src/assets/dr_tech.jpg");
   background-size: 100% 100%;
   background-position: 'center';
@@ -32,24 +34,28 @@
   height:50.5vw;
 }
 .carousel-black-blur{
+  /* display: grid;
+  grid-template-columns: 1fr; */
   width:100%;
   height:100%;
   background-color: rgba(0,0,0,0.75)
 
 }
 .carousel-navbar{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
   background: transparent;
   position: relative;
   width:100%;
   height:60%;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
 }
 .medbots-logo{
   margin:0;
   background: transparent;
 }
 .navbar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width:80%;
   background: transparent;
   display: flex;
@@ -60,11 +66,12 @@
   margin: 0;
   padding-right: 30px;
   list-style: None;
-  font-size: 22px;
+  font-size: 100%;
   display: inline;
 }
 .navbar nav ol li{
   display: inline;
+  height: auto;
   padding: 10px 15px;
 }
 .navbar nav ol a{
@@ -95,5 +102,22 @@
 }
 .carousel-contents h1{
   color: white;
-  font-size: 70px;
+  font-size: 5vh;
+}
+
+/* About */
+.founders-welcome{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px 30px;
+  justify-content: center;
+}
+.founders-welcome-speech{
+  background-color: transparent;
+  font-size: 100%;
+  color:white;
+  padding:0px 100px;
+}
+.founders-image{
+  background: transparent;
 }

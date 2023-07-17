@@ -1,0 +1,16 @@
+.products-container{
+    width: 100vw;
+    height: 50.5vw;
+    background-color: black;
+}
+.products-row{
+    background: transparent;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 150px;
+}
+.product{
+    border: 1px solid white;
+    color:grey;
+    text-align: center;
+}
