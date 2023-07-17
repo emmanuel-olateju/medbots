@@ -3,6 +3,7 @@ import '../components/Products.css';
 import Navbar from './navbar';
 import _productCards from './productcards';
 import aiLogo from '../assets/aiLogo.jpg';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
     const TTSbody="Text to Speech application specialized for medical use case.";
@@ -17,14 +18,14 @@ const Products = () => {
             <Navbar />
             <div className="products-container">
                 <div className="products-row">
-                    <_productCards header="TTS" body={TTSbody} img={aiLogo} />
-                    <_productCards header="docChat" body={DOCCHATbody} img={aiLogo} />
-                    <_productCards header="imageDoc" body={IMAGEDOCbody} img={aiLogo} />
+                    <Link to="/products"><_productCards header="TTS" body={TTSbody} img={aiLogo} /></Link>
+                    <Link to="/products"><_productCards header="docChat" body={DOCCHATbody} img={aiLogo} /></Link>
+                    <Link to="/products"><_productCards header="imageDoc" body={IMAGEDOCbody} img={aiLogo} /></Link>
                 </div>
                 <div className="products-row">
-                    <_productCards header="medData" body={MEDDATAbody} img={aiLogo} />
-                    <_productCards header="myTrack" body={MYTRACKbody} img={aiLogo} />
-                    <_productCards header="locateDoc" body={LOCATEDOCbody} img={aiLogo} />
+                    <Link to="/products"><_productCards header="medData" body={MEDDATAbody} img={aiLogo} /></Link>
+                    <Link to="/products"><_productCards header="myTrack" body={MYTRACKbody} img={aiLogo} /></Link>
+                    <Link to="/products"><_productCards header="locateDoc" body={LOCATEDOCbody} img={aiLogo} /></Link>
                 </div>
             </div>
         </>
